@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Buenas prácticas</title>
+</head>
+<body>
+    <header>
+        <h1>Accesibilidad Web: Diseño para Todos</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i>Inicio</a></li>
+            <li><a href="principioswcag.html"><i class="fa-solid fa-lightbulb"></i>Principios WCAG</a></li>
+            <li><a href="buenaspracticas.html"><i class="fa-solid fa-universal-access"></i>Buenas prácticas</a></li>
+            <li><a href="ejemplostecnicos.html"><i class="fa-solid fa-code"></i>Ejemplos técnicos</a></li>
+            <li><a href="sugerenciasmejora.html"><i class="fa-solid fa-envelope"></i>Sugerencias</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Guía de Buenas Prácticas Esenciales (WCAG)</h2>
+        <p>Aplicar estas prácticas garantiza que su contenido sea utilizable y comprensible para una audiencia más amplia, incluyendo personas que dependen de tecnologías de asistencia.</p>
+
+        <ul>
+            <li>
+                <h3>Texto Alternativo</h3>
+                <p>Todas las imágenes que transmitan información deben tener un atributo <code>alt</code> descriptivo. Si una imagen es puramente decorativa, el <code>alt</code> debe dejarse vacío (<code>alt=""</code>) para que los lectores de pantalla la ignoren.</p>
+                <code>&lt;img src="foto.jpg" alt="Un desarrollador escribiendo código en una laptop."&gt;</code>
+            </li>
+            <li>
+                <h3>Contraste de Color Suficiente</h3>
+                <p>El color del texto y el color de fondo deben tener una relación de contraste mínima de **4.5:1** (Nivel AA de WCAG) para asegurar que las personas con baja visión puedan leer el contenido sin esfuerzo.</p>
+            </li>
+            <li>
+                <h3>Navegación por Teclado</h3>
+                <p>Todos los elementos interactivos (enlaces, botones, campos de formulario) deben ser accesibles y operables **utilizando únicamente la tecla TAB**. El foco visible (el borde que aparece al presionar TAB) debe ser claro.</p>
+            </li>
+            <li>
+                <h3>Uso Correcto de Etiquetas y Roles</h3>
+                <p>Utiliza las etiquetas semánticas adecuadas. Por ejemplo, usa la etiqueta **<code>&lt;button&gt;</code>** para acciones y la etiqueta **<code>&lt;a&gt;</code>** para enlaces, en lugar de usar un simple <code>&lt;div&gt;</code>. Esto da el "rol" correcto a los elementos.</p>
+            </li>
+            <li>
+                <h3>Etiquetas de Formulario (label)</h3>
+                <p>Cada campo de entrada en un formulario (<code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>) debe estar asociado con una etiqueta <code>&lt;label&gt;</code> utilizando el atributo <code>for</code>. Esto permite a los lectores de pantalla anunciar qué información se espera en ese campo.</p>
+                <p>Ejemplo: <code>&lt;label for="nombre"&gt;Nombre:&lt;/label&gt;</code></p>
+            </li>
+        </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Proyecto de Accesibilidad Web.</p>
+    </footer>
+</body>
+</html>

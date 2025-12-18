@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Ejemplos técnicos</title>
+</head>
+<body>
+    <header>
+        <h1>Accesibilidad Web: Diseño para Todos</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i>Inicio</a></li>
+            <li><a href="principioswcag.html"><i class="fa-solid fa-lightbulb"></i>Principios WCAG</a></li>
+            <li><a href="buenaspracticas.html"><i class="fa-solid fa-universal-access"></i>Buenas prácticas</a></li>
+            <li><a href="ejemplostecnicos.html"><i class="fa-solid fa-code"></i>Ejemplos técnicos</a></li>
+            <li><a href="sugerenciasmejora.html"><i class="fa-solid fa-envelope"></i>Sugerencias</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+         <h2>Errores comunes y soluciones de accesibilidad</h2>
+         <p>Ahora se mostrará una tabla comparativa de codificación que normalmente rompen la accesibilidad y de qué forma se puede corregir la semántica nativa de HTML5</p>
+         <table>
+            <caption>Tabla de correciones para la accesibilidad web</caption>
+
+            <thead>
+                <tr>
+                    <th>Problema</th>
+                    <th>Solución recomendada</th>
+                    <th>Concepto clave</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td>Usar<code>&lt;div&gt;</code> para un botón.</td>
+                    <td>Usar la etiqueta semántica <code>&lt;button&gt;</code>.</td>
+                    <td>*semántica nativa*.El lector de la pantalla lo identifica como un botón automáticamente</td>
+                </tr>
+                <tr>
+                    <td>Ícono sin texto descriptivo</td>
+                    <td>Añadir <code>aria-label="Cerrar ventana"</code> al ícono</td>
+                    <td>**aria-label:**Esto proporciona una etiqueta invisible para los usuarios videntes pero es visible para las tecnologías de asistencia</td>
+                </tr>
+                <tr>
+                    <td>Un campo de entrada de datos que no poseen etiqueta <code>&lt;label&lt;</code>.</td>
+                    <td>Asociar al campo con un<code>&lt;label for="..."&lt;</code>.</td>
+                    <td>**Etiquetas:** Le permite al usuario poder hacer click en la etiqueta para enfocar el campo y le comunica al lectorel propósito del campo</td>
+                </tr>
+                <tr>
+                    <td>Un elemento no puede cambiar de color al pasar el ratón.</td>
+                    <td>Asegurar que el estado del hover y el foco sean claramente visibles.</td>
+                    <td>**Foco visible:** Es necesario para la navegación por teclado</td>
+                </tr>
+            </tbody>
+         </table>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Proyecto de Accesibilidad Web.</p>
+    </footer>
+</body>
+</html>
